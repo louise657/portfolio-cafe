@@ -547,6 +547,26 @@
   textarea {
     resize: vertical;
   }
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex: 1;
+  }
+
+  .form-row {
+    flex-direction: row;
+  }
+
+input,
+  textarea {
+    width: 100%;
+  }
+}
   
   button {
     padding: 12px;
