@@ -640,3 +640,38 @@ input,
     padding: 12px 8px;
   }
 }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-left, .contact-right {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+You sent
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+  }
+
+  .contact-left, .contact-right {
+    flex: 1;
+  }
+
+  .form-row {
+    flex-direction: row;
+  }
+
+  .form-row input {
+    width: 100%;
+  }
+}
