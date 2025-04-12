@@ -537,6 +537,12 @@
     gap: 20px;
     margin-bottom: 15px;
   }
+
+.contact-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
   
   input, textarea {
     width: 100%;
@@ -549,13 +555,17 @@
   }
 
 @media (min-width: 768px) {
-  .contact-container {
+   .from-row{
+       flex-direction: column;
+   }
+    
+    .contact-container {
     flex-direction: row;
   }
 
   .contact-left,
   .contact-right {
-    flex: 1;
+    min-width: 100%;
   }
 
   .form-row {
@@ -567,6 +577,8 @@ input,
     width: 100%;
   }
 }
+
+
   
   button {
     padding: 12px;
